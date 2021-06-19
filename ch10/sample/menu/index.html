@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Menu</title>
+    <!-- jQuery UI style sheet -->
+    <link rel="stylesheet" href="../jquery-ui-1.12.1.custom/jquery-ui.min.css" />
+    <!-- normal style sheet used for layout and general formatting -->
+    <link rel="stylesheet" href="main.css" />
+    <!-- jQuery library -->
+    <script src="../jquery/jquery-3.6.0.min.js"></script>
+    <!-- jQuery UI library -->
+    <script src="../jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <!-- jQuery call to the menu method -->
+    <script>
+      $(document).ready(function () {
+        $("#menu").menu({
+          //icons: { submenu: "ui-icon-triangle-1-e" },
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <main>
+      <ul id="menu">
+        <li>
+          <div><a href="index.html">Home</a></div>
+        </li>
+        <li>
+          <div>
+            <a href="aboutus.html">About Us</a>
+          </div>
+          <ul>
+            <li>
+              <div><a href="history.html">Company History</a></div>
+            </li>
+            <li>
+              <div><a href="staff.html">Our Staff</a></div>
+            </li>
+            <li>
+              <div><a href="headquarters.html">Our Headquarters</a></div>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <div><a href="solutions.html">Solutions</a></div>
+          <ul>
+            <li>
+              <div><a href="vProspect.html">vProspect 2.0</a></div>
+            </li>
+            <li>
+              <div><a href="vConvert.html">vConvert 2.0</a></div>
+            </li>
+            <li>
+              <div><a href="vRetain.html">vRetain 1.0</a></div>
+            </li>
+          </ul>
+        </li>
+        <li>-</li>
+        <li>
+          <div><a href="support.html">Support</a></div>
+        </li>
+        <li>
+          <div><a href="contactus.html">Contact Us</a></div>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
