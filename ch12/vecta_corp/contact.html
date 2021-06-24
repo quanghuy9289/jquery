@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Vecta Corp</title>
+    <!-- jQuery UI style sheet -->
+    <link rel="stylesheet" href="css/jquery-ui.min.css" />
+    <!-- normal style sheet used for layout and general formatting -->
+    <link rel="stylesheet" href="main.css" />
+    <!-- jQuery library -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- Reference to the Cycle 2 plugin. -->
+    <script src="js/jquery.cycle2.min.js"></script>
+    <!-- Reference to the custom-built plugin. -->
+    <script src="js/jquery.highlight.js"></script>
+    <!-- jQuery UI library -->
+    <script src="js/jquery-ui.min.js"></script>
+
+    <!-- jQuery UI API calls -->
+    <script src="js/contact.js"></script>
+  </head>
+
+  <body>
+    <header></header>
+
+    <!-- CYCLE 2 PLUGIN CODE -->
+    <div class="cycle-slideshow" data-cycle-fx="fade" data-cycle-speed="1000" data-cycle-pause-on-hover="true">
+      <img src="images/rotator01.jpg" width="697" height="240" alt="vProspect 2.0" />
+      <img src="images/rotator02.jpg" width="697" height="240" alt="vConcert 2.0" />
+      <img src="images/rotator03.jpg" width="697" height="240" alt="vRetain 1.0" />
+    </div>
+    <!-- END CYCLE 2 PLUGIN CODE -->
+
+    <!-- CUSTOM PLUGIN STYLIZED MENU -->
+    <nav>
+      <ul id="vecta_menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="solutions.html">Solutions</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <!-- END CUSTOM PLUGIN STYLIZED MENU -->
+
+    <main>
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <p>
+          Fill out the form below and a sales representative will contact you shortly. For more information on how to
+          fill out this form, please review our <a href="#" id="help">vSupport documentation</a>.
+        </p>
+
+        <!-- BEGIN DIALOG WIDGET -->
+        <div id="helpdialog" title="vSupport" style="display: none">
+          <p>
+            Our contact form is divided into four sections: Personal Information, Company Information, Product Interest,
+            and Additional Information. Please provide as much information as you can so our sales representative has as
+            much information as possible before contacting you.
+          </p>
+        </div>
+        <!-- END DIALOG WIDGET -->
+
+        <div id="tabs-1">
+          <label>Name:</label>
+          <input name="name" type="text" id="name" maxlength="30" required />
+
+          <label>Phone Number:</label>
+          <input
+            name="phonenumber"
+            type="tel"
+            id="phonenumber"
+            maxlength="20"
+            required
+            pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+          />
+
+          <label>Email:</label>
+          <input name="email" id="email" type="email" maxlength="30" required />
+
+          <label>Company Name:</label>
+          <input name="companyname" type="text" id="companyname" maxlength="30" />
+
+          <label>Current Infrastructure:</label>
+          <select name="infrastructure" id="infrastructure">
+            <option value="Mac">Mac</option>
+            <option value="Linux">Linux</option>
+            <option value="Unix">Unix</option>
+            <option value="Windows">Windows</option>
+          </select>
+
+          <label>Product Interest:</label>
+          <select name="product" id="product" size="3" multiple>
+            <option value="vProspect 2.0">vProspect 2.0</option>
+            <option value="vConvert 2.0">vConvert 2.0</option>
+            <option value="vRetain 1.0">vRetain 1.0</option>
+          </select>
+
+          <label>How did you hear about us?</label>
+          <select name="hearaboutus" id="hearaboutus">
+            <option value="Ad">Print Ad / Web Ad</option>
+            <option value="Word of Mouth">Word of Mouth</option>
+            <option value="Radio">Radio Ad</option>
+            <option value="TV Commercial">TV Commercial</option>
+          </select>
+
+          <label>Questions / Comments:</label>
+          <textarea name="questions" id="questions" rows="3"></textarea>
+
+          <label>Best day to reach you:</label>
+          <!-- BEGIN DATEPICKER WIDGET -->
+          <input type="text" id="datepicker" name="datepicker" /><br />
+          <!-- END DATEPICKER WIDGET -->
+        </div>
+
+        <!-- BEGIN BUTTON WIDGET -->
+        <input type="submit" id="submitbutton" value="Submit Form" />
+        <!-- END BUTTON WIDGET -->
+      </form>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

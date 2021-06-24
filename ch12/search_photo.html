@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Search photos by tags on Flickr</title>
+    <style>
+      html {
+        background-color: #dfe3e6;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.8em;
+        line-height: 25px;
+        width: 697px;
+        background-color: #fff;
+        margin: 15px auto 0 auto;
+        padding: 20px;
+        border: 2px solid #000058;
+      }
+      h1 {
+        margin: 20px 0;
+        color: #0000c2;
+      }
+    </style>
+    <script>
+      $(function () {
+        var searchTerm;
+        $("#btnSearch").click(function () {
+          searchTerm = "";
+          if ($("#search").val().trim() == "") {
+            alert("You must enter one or more tags");
+          } else {
+            searchTerm = $("#search").val().trim();
+            var url =
+              "https://www.flickr.com/services/feeds/photos_public.gne?format=json&jsoncallback=?&tags=" +
+              searchTerm +
+              "&tagmode=all";
+
+            $.getJSON(url, function (data) {
+              var html = "";
+              $.each(data.items, function (i, item) {
+                html += "<h2>" + item.title + "</h2>";
+                html += "<img src=" + item.media.m + ">";
+                html += "<p><b>Tags: </b>" + item.tags + "</p>";
+              });
+              $("#photos").html(html);
+            });
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    Search by tags: <input type="text" size="30" id="search" />
+    <input type="button" value="Search" id="btnSearch" />
+    <h1>Flickr Results</h1>
+    <div id="photos"></div>
+  </body>
+</html>

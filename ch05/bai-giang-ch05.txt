@@ -1,0 +1,26 @@
+Chapter 05 - Get off a fast start with JQuery
+
+1. Introduction to JQuery
+- Open-sourse, JavaScript library
+- What jQuery offers
+
+2. The basic of jQuery programming
+- Include jQuery in web pages:
+    + download jQuery library - jquery.com
+    + CDN
+
+- jQuery selectors:
+    + $ sign - jQuery library
+    + Syntax: $("selector")
+
+- jQuery methods:
+    + Syntax: $("selector").methodName(params)
+
+- jQuery event methods:
+    + Syntax: $("selector").eventMethodName(eventHandlerFunction)
+
+3. A working subset of selectors, event methods
+- jQuery selectors
+- jQuery methods
+- jQuery event methods
+- Other event methods

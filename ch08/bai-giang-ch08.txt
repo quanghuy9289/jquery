@@ -1,0 +1,27 @@
+Chapter 8 - How to work with forms and data validation
+
+1. Introduction to forms and controls
+
+- Forms
+    + attributes
+
+- HTML5 controls:
+    + control
+    + attributes
+    + attributes for data validation
+
+2. How to use jQuery to work with forms
+
+- jQuery selectors for form controls
+
+- jQuery methods for getting and setting control values
+    + val()
+    + val(value)
+    + trim()
+
+- jQuery event methods
+
+- jQuery methods for triggering events
+
+
+

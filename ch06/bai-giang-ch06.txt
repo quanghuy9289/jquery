@@ -1,0 +1,25 @@
+Chapter 06 - How to use effects and animations
+
+1. How to use effects
+- Basic methods for jQuery effects
+    + Syntax: 
+        - methodName(duration, callback)
+        - fadeTo(duration, opacity, callback)
+
+2. How to use animation
+- animate method
+    + Syntax: animate({properties}, duration, callback)
+    + Chain animate method
+    + Queued animations
+
+- delay, stop, finish method
+- easing with effects and animations:
+    + Refer to the way an animation is perform
+    + jQuery has 2 easings: swing, linear
+    + Syntax:
+        - methodName(duration, easing, callback)
+        - fadeTo(duration, opacity, easing, callback)
+        - animate({properties}, duration, easing, callback)
+
+- The advanced syntax:
+    animate({properties}, {options})

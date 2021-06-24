@@ -1,0 +1,21 @@
+Chapter 7 - How to use jQuery plugins
+
+1. Introduction to jQuery plugins
+- JavaScript applications
+
+2. How to use any jQuery plugin
+- Study the document for the plugin
+- Download plugin/link CDN
+- Link into web page
+- Save in right structure relationship with CSS and JS files
+- Code HTML, CSS, JS to use plugin
+- If necessary, write js code to customize plugin - options
+
+
+Chapter 10 - How to use jQuery UI
+
+1. Introduction to jQuery UI
+
+2. Using jQuery UI
+- Include jQuery UI in web page
+- How to use jQuery UI
